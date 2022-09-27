@@ -30,20 +30,3 @@ Route::get('/', function () {
     return (new Task2Export())->download('task2.csv', \Maatwebsite\Excel\Excel::CSV);
 
 });
-/*TASK 1
-- From jos_osmembership_subscribers take user_id
-- where plan_id = 1, 5, 7, 8, 26, 27 and published = 1
-    - and lookup in jos_user_usergroup_map column user_id
-TASK 2
-- From jos_user_usergroup_map take user_id where group_id = 12
-    - and lookup in jos_osmembership_subscribers column user_id
-- where plan_id = 1, 5, 7, 8, 26, 27 and published = 2*/
-
-/*From jos_osmembership_subscriber:
-plan_id
-published
-email
-
-From jos_user_usergroup_map
-user_id
-group_id*/
